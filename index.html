@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
             <button id="theme-toggle-btn">🌙</button>
         <header>
-            <h1>กลุ่มงานแพทยศาสตรศึกษา สำนักงานพัฒนาระบบบริการทางการแพทย์ กรุงเทพมหานคร</h1>
+            <h1><i class='bx bx-pulse' style="color: var(--primary-color);"></i> กลุ่มงานแพทยศาสตรศึกษา <br> สำนักงานพัฒนาระบบบริการทางการแพทย์ กรุงเทพมหานคร</h1>
         </header>
 
         <main>
@@ -35,126 +36,291 @@
                 </p>
             </div> 
             -->
-            
-            <button class="collapsible fade-in-section">
-                ร่าง MOU สำนักการแพทย์
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://docs.google.com/spreadsheets/d/1zGvRChBDuxHi8QKE8KYyA-DKcxhD1gP34KeP2atiaqo/edit?usp=sharing" target="_blank">ร่าง MOU สำนักการแพทย์</a>:</strong> Sheet
-                    </li>
-                </ul>
-            </div>
-            
-            <button class="collapsible fade-in-section">
-                ระบบบันทึกเวลาการทำงาน
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://mecmsd-bkk.github.io/Time-Attendance-System/" target="_blank">ระบบบันทึกเวลาการทำงาน</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                    <li>
-                        <strong><a href="https://drive.google.com/file/d/1U3XAKmAU1shyNbFPc5DBqOhoDCkWuDBI/view?usp=sharing" target="_blank">คู่มือการใช้งานระบบบันทึกเวลาการทำงาน</a>:</strong> pdf
-                    </li>
-                    <li>
-                        <strong><a href="https://drive.google.com/file/d/1Zb3RaTiKw5TfhxNCuNLIqaNMxrsvjCbN/view?usp=sharing" target="_blank">แบบฟอร์มชี้แจงเหตุผลกรณีลืมลงเวลาปฏิบัติงาน</a>:</strong> pdf
-                    </li>
-                    <li>
-                        <strong><a href="https://docs.google.com/document/d/1MbsKgMl7U98_fUn7LkZsQfn3_kyMACAg/edit?usp=sharing&ouid=108579731185729173094&rtpof=true&sd=true" target="_blank">แบบฟอร์มใบขออนุมัติมาปฏิบัติงานนอกเวลาราชการ</a>:</strong> Word
-                    </li>
-                    <li>
-                        <strong><a href="https://drive.google.com/file/d/1OpJUSSum5wsK8p3cJvvTwuZxjydFfqGg/view?usp=sharing" target="_blank">แบบฟอร์มใบขออนุมัติมาปฏิบัติงานนอกเวลาราชการ</a>:</strong> pdf
-                    </li>
-                    <li>
-                        <strong><a href="https://docs.google.com/spreadsheets/d/1SqRQ9rmhEQBj1racPhw7K7oPwwWPrRDP-pgHMuluxrk/edit?usp=sharing" target="_blank">วันชดเชย (บุคคลภายนอกช่วยปฏิบัติราชการ)</a>:</strong> spreadsheets ข้อมูล
-                    </li>
-                </ul>
-            </div>
-            
-            <button class="collapsible fade-in-section">
-                ระบบหนังสือเวียน
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://mecmsd-bkk.github.io/CLN-For.MSD/" target="_blank">ระบบหนังสือเวียน</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                    <li>
-                        <strong><a href="https://drive.google.com/file/d/1zmbdynsqsg5zWqOH_NGxl--xOZNokvzN/view?usp=sharing" target="_blank">คู่มือการใช้ระบบหนังสือเวียน</a>:</strong> pdf
-                    </li>
-                </ul>
-            </div>
-            
-            <button class="collapsible fade-in-section">
-                ระบบจัดการตารางงานและการลา - WorkTrack
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://mecmsd-bkk.github.io/Worktrack.Mecmsdbkk/" target="_blank">ระบบ WorkTrack – ระบบจัดการตารางงานและการลา</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                    <li>
-                        <strong><a href="https://docs.google.com/spreadsheets/d/14jR1xLMw7XPs2bjpgaZzF0nfr_qIUVO65tUfQllO0YU/edit?usp=sharing" target="_blank">Sheet - WorkTrack – ระบบจัดการตารางงานและการลา 2568</a>:</strong> Exel
-                    </li>
-                    <li>
-                        <strong><a href="#" target="_blank">คู่มือการใช้งานระบบ WorkTrack – ระบบจัดการตารางงานและการลา (กำลังดำเนินการ)</a>:</strong> pdf
-                    </li>
-                </ul>
-            </div>
+            <div class="accordion-grid">
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-file'></i> ร่าง MOU สำนักการแพทย์</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://docs.google.com/spreadsheets/d/1zGvRChBDuxHi8QKE8KYyA-DKcxhD1gP34KeP2atiaqo/edit?usp=sharing" target="_blank">ร่าง MOU สำนักการแพทย์</a>:</strong> Sheet
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-time-five'></i> ระบบบันทึกเวลาการทำงาน</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://mecmsd-bkk.github.io/Time-Attendance-System/" target="_blank">ระบบบันทึกเวลาการทำงาน</a>:</strong> เว็บไซต์ระบบ
+                            </li>
+                            <li>
+                                <strong><a href="https://drive.google.com/file/d/1U3XAKmAU1shyNbFPc5DBqOhoDCkWuDBI/view?usp=sharing" target="_blank">คู่มือการใช้งานระบบบันทึกเวลาการทำงาน</a>:</strong> pdf
+                            </li>
+                            <li>
+                                <strong><a href="https://drive.google.com/file/d/1Zb3RaTiKw5TfhxNCuNLIqaNMxrsvjCbN/view?usp=sharing" target="_blank">แบบฟอร์มชี้แจงเหตุผลกรณีลืมลงเวลาปฏิบัติงาน</a>:</strong> pdf
+                            </li>
+                            <li>
+                                <strong><a href="https://docs.google.com/document/d/1MbsKgMl7U98_fUn7LkZsQfn3_kyMACAg/edit?usp=sharing&ouid=108579731185729173094&rtpof=true&sd=true" target="_blank">แบบฟอร์มใบขออนุมัติมาปฏิบัติงานนอกเวลาราชการ</a>:</strong> Word
+                            </li>
+                            <li>
+                                <strong><a href="https://drive.google.com/file/d/1OpJUSSum5wsK8p3cJvvTwuZxjydFfqGg/view?usp=sharing" target="_blank">แบบฟอร์มใบขออนุมัติมาปฏิบัติงานนอกเวลาราชการ</a>:</strong> pdf
+                            </li>
+                            <li>
+                                <strong><a href="https://docs.google.com/spreadsheets/d/1SqRQ9rmhEQBj1racPhw7K7oPwwWPrRDP-pgHMuluxrk/edit?usp=sharing" target="_blank">วันชดเชย (บุคคลภายนอกช่วยปฏิบัติราชการ)</a>:</strong> spreadsheets ข้อมูล
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-news'></i> ระบบหนังสือเวียน</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://mecmsd-bkk.github.io/CLN-For.MSD/" target="_blank">ระบบหนังสือเวียน</a>:</strong> เว็บไซต์ระบบ
+                            </li>
+                            <li>
+                                <strong><a href="https://drive.google.com/file/d/1zmbdynsqsg5zWqOH_NGxl--xOZNokvzN/view?usp=sharing" target="_blank">คู่มือการใช้ระบบหนังสือเวียน</a>:</strong> pdf
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-calendar-event'></i> ระบบจัดการตารางงานและการลา - WorkTrack</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://mecmsd-bkk.github.io/Worktrack.Mecmsdbkk/" target="_blank">ระบบ WorkTrack – ระบบจัดการตารางงานและการลา</a>:</strong> เว็บไซต์ระบบ
+                            </li>
+                            <li>
+                                <strong><a href="https://docs.google.com/spreadsheets/d/14jR1xLMw7XPs2bjpgaZzF0nfr_qIUVO65tUfQllO0YU/edit?usp=sharing" target="_blank">Sheet - WorkTrack – ระบบจัดการตารางงานและการลา 2568</a>:</strong> Exel
+                            </li>
+                            <li>
+                                <strong><a href="#" target="_blank">คู่มือการใช้งานระบบ WorkTrack – ระบบจัดการตารางงานและการลา (กำลังดำเนินการ)</a>:</strong> pdf
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <button class="collapsible fade-in-section">
-                ระบบจองเวลาเรียนออนไลน์ - SHEE Media
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://mecmsd-bkk.github.io/SHEEMediaBooking.github.io/" target="_blank">ระบบจองเวลาเรียนออนไลน์ SHEE Media</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                </ul>
-            </div>
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-laptop'></i> ระบบจองเวลาเรียนออนไลน์ - SHEE Media</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://mecmsd-bkk.github.io/SHEEMediaBooking.github.io/" target="_blank">ระบบจองเวลาเรียนออนไลน์ SHEE Media</a>:</strong> เว็บไซต์ระบบ
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <button class="collapsible fade-in-section">
-                งานนอกกลุ่มงานศูนย์แพทยศาสตรศึกษาชั้นคลินิกสำนักการแพทย์
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://mecmsd-bkk.github.io/mec.msd.bkk/" target="_blank">งานนอกกลุ่มงานศูนย์แพทยศาสตรศึกษาชั้นคลินิกสำนักการแพทย์</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                </ul>
-            </div>
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-briefcase-alt-2'></i> Link งานนอกกลุ่มงานศูนย์แพทยศาสตรศึกษาชั้นคลินิก</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://mecmsd-bkk.github.io/mec.msd.bkk/" target="_blank">งานนอกกลุ่มงานศูนย์แพทยศาสตรศึกษาชั้นคลินิกสำนักการแพทย์</a>:</strong> เว็บไซต์ระบบ
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <button class="collapsible fade-in-section">
-                ระบบหนังสือเข้า - ออก (CMS) (รอดำเนินการ) 
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="#" target="_blank">#</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                    <li>
-                        <strong><a href="#" target="_blank">#</a>:</strong> pdf
-                    </li>
-                </ul>
-            </div>
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-group'></i> การประชุมคณะกรรมการบริหารเงินกองทุน ศูนย์แพทยศาสตรศึกษาชั้นคลินิก</div>
+                    </button>
+                    <div class="content">
+                        <div class="overview-section" style="margin-top: 25px; margin-bottom: 10px;">
+                            <div class="year-selection-title">📋 สารบัญภาพรวม</div>
+                            <ul>
+                                <li>
+                                    <strong><a href="https://docs.google.com/document/d/1osISCpLHNEBPPH_CJiQFQm7omtxm3ejk/edit?usp=sharing&ouid=111647940627592931791&rtpof=true&sd=true" target="_blank">สารบัญเอกสารทั้งหมด</a></strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="year-selection-container">
+                            <div class="year-selection-title">📅 เลือกปีการศึกษา</div>
+                            <div class="year-grid">
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2557</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1vSfHT3pqhc052iD97ZRG0XaSJyLRN6Jv?usp=sharing" target="_blank" onclick="event.stopPropagation()"> พ.ศ. 2557</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2559</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1T5Hc-IGLDKTQUSGMngbL2r2L65NT9GGf?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2559</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2561</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1ah-JDp3VIjreaPd07gWmsCRXXJZDOZgw?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2561</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2562</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1REcvpL2tmE6sQN10L0Drb9_eWkF2CSYN?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2562</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2563</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1DdwOhyK0uhHS153WIFxCVdMT3ZmJ6X_4?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2563</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2564</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1sB1HUiiHVx0cnORxJFWQLimrEK5Rjk0I?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2564</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2565</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1WqEnki58NH4VCDJ-J8oN03B1kZLY-p_q?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2565</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2566</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1Ae4LxU2nlkVedC2WX5s4NYP0xrvb1x8u?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2566</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2567</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1BimTIJFlGSZhWufKjOIU8Xkk0mhX1tMF?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2567</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2568</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="https://drive.google.com/drive/folders/1GDrJ2jIYoOCn4gmNfz7q-AKXkPc7HMZj?usp=sharing" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2568</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                                <div class="year-card" onclick="toggleYearLinks(this)">
+                                    <div class="year-card-inner">
+                                        <div class="year-icon">📘</div>
+                                        <div class="year-title">ปีการศึกษา 2569</div>
+                                        <div class="year-link">ดูรายละเอียด ↘</div>
+                                    </div>
+                                    <div class="year-links">
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">พ.ศ. 2569</a>
+                                        <!-- <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 2</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 3</a>
+                                        <a href="#" target="_blank" onclick="event.stopPropagation()">ย่อยลิงก์ 4</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <button class="collapsible fade-in-section">
-                ประกันสังคม
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://docs.google.com/spreadsheets/d/16dgLtOn7cBaQgG1jAraJ5fUP4hEEysGfMM4DTa2SUFY/edit?usp=sharing" target="_blank">เงินประกันสังคม ปี 2567 (20 ม.ค. 2569)</a>:</strong> Sheet
-                    </li>
-                    <li>
-                        <strong><a href="https://docs.google.com/spreadsheets/d/1aSDyj0vDmt3KevSdhJsWMRTUKKRWUM7HrDDGIES2u6U/edit?usp=sharing" target="_blank">เงินประกันสังคม ปี 2568 (UD 20 ม.ค. 69)</a>:</strong> Sheet
-                    </li>
-                    <li>
-                        <strong><a href="https://docs.google.com/spreadsheets/d/1M4as7N-pBxcPMI-fzqu4mDrVOLtIdD5JI_12jtTI7pI/edit?usp=sharing" target="_blank">เงินประกันสังคม ปี 2569 (UD 20 ม.ค. 69)</a>:</strong> Sheet
-                    </li>
-                </ul>
+                <div class="collapsible-wrapper">
+                    <button class="collapsible fade-in-section">
+                        <div class="collapsible-title"><i class='bx bx-shield-plus'></i> ประกันสังคม</div>
+                    </button>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <strong><a href="https://docs.google.com/spreadsheets/d/16dgLtOn7cBaQgG1jAraJ5fUP4hEEysGfMM4DTa2SUFY/edit?usp=sharing" target="_blank">เงินประกันสังคม ปี 2567 (20 ม.ค. 2569)</a>:</strong> Sheet
+                            </li>
+                            <li>
+                                <strong><a href="https://docs.google.com/spreadsheets/d/1aSDyj0vDmt3KevSdhJsWMRTUKKRWUM7HrDDGIES2u6U/edit?usp=sharing" target="_blank">เงินประกันสังคม ปี 2568 (UD 20 ม.ค. 69)</a>:</strong> Sheet
+                            </li>
+                            <li>
+                                <strong><a href="https://docs.google.com/spreadsheets/d/1M4as7N-pBxcPMI-fzqu4mDrVOLtIdD5JI_12jtTI7pI/edit?usp=sharing" target="_blank">เงินประกันสังคม ปี 2569 (UD 20 ม.ค. 69)</a>:</strong> Sheet
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </main>
