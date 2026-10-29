@@ -12,15 +12,14 @@
 </head>
 <body>
 
-    <div class="container">
-        <button id="theme-toggle-btn" type="button" aria-label="สลับโหมดสี" title="สลับโหมดสี">🌙</button>
-        <header>
-            <h1><i class='bx bx-pulse' style="color: var(--primary-color);"></i> กลุ่มงานแพทยศาสตรศึกษา <br> สำนักงานพัฒนาระบบบริการทางการแพทย์ กรุงเทพมหานคร</h1>
-        </header>
+    <div class="topbar"><div class="topbar-inner"><a class="brand" href="#top"><span class="brand-mark"><i class='bx bx-pulse' aria-hidden="true"></i></span><span><b>แพทยศาสตรศึกษา</b><small>สำนักการแพทย์ กรุงเทพมหานคร</small></span></a><span class="topbar-label">ศูนย์รวมระบบงานและเอกสาร</span><button id="theme-toggle-btn" type="button" aria-label="เปิดโหมดมืด" title="สลับโหมดสี"><i class='bx bx-moon' aria-hidden="true"></i></button></div></div>
+    <div class="container" id="top">
+        <header class="hero"><div class="hero-copy"><div class="eyebrow"><span></span> MEDICAL EDUCATION CENTER</div><h1>ยินดีต้อนรับสู่<br><em>กลุ่มงานแพทยศาสตรศึกษา</em></h1><p>สำนักงานพัฒนาระบบบริการทางการแพทย์ กรุงเทพมหานคร</p><div class="hero-note"><i class='bx bx-grid-alt' aria-hidden="true"></i> รวมระบบงานและเอกสารที่จำเป็นไว้ในที่เดียว</div></div><div class="hero-art" aria-hidden="true"><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="art-cross">✳</div><div class="art-label">MEC <span>/</span> BKK</div></div></header>
 
         <main>
             
-            <p class="fade-in-section">เลือกระบบที่ท่านต้องการใช้งาน หากมีปัญหาหรือข้อสงสัยต่าง ๆ กรุณาติดต่อผู้ดูแลระบบ</p>
+            <div class="section-heading"><div><div class="section-kicker">WORKSPACE DIRECTORY <span> / 01</span></div><h2>ระบบงานและเอกสาร</h2><p>เลือกรายการที่ต้องการ เพื่อดูระบบ คู่มือ และเอกสารที่เกี่ยวข้อง</p></div><div class="search-wrap"><i class='bx bx-search' aria-hidden="true"></i><label class="sr-only" for="search">ค้นหาระบบหรือเอกสาร</label><input id="search" type="search" placeholder="ค้นหาระบบหรือเอกสาร..."><kbd>⌕</kbd></div></div>
+            <div class="directory-meta"><span id="result-count"></span><span>คลิกที่รายการเพื่อดูรายละเอียด <i class='bx bx-down-arrow-alt' aria-hidden="true"></i></span></div>
             <div class="accordion-grid">
                 <div class="collapsible-wrapper">
                     <button class="collapsible fade-in-section" type="button">
@@ -359,7 +358,8 @@
                 </div>
                 
             </div>
-
+            <p id="empty-state" hidden>ไม่พบรายการที่ค้นหา ลองใช้คำค้นอื่นอีกครั้ง</p>
+            <footer><span>กลุ่มงานแพทยศาสตรศึกษา</span><span>หากมีปัญหาหรือข้อสงสัย กรุณาติดต่อผู้ดูแลระบบ</span></footer>
         </main>
     </div>
 
